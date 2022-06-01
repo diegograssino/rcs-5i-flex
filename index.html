@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Comisión 5i - Flex</h1>
+    <h2>
+      1. display: block, inline, inline-block
+    </h2>
+    <p class="comment">
+      Los elementos de bloque (o que tiene display
+      block) son elementos que ocupan todo el
+      ancho de la pantalla y aparte se van
+      acomodando uno debajo del otro. Los
+      elementos en linea (o que tienen display
+      inline) se acomodan uno al lado del otro, o
+      sea que no aplican el salto de linea al
+      finalizar. Los elementos inline-block tienen
+      caracteristicas mezcladas de ambos, pueden
+      tener width y heigth pero se acomodan uno al
+      lado del otro.
+    </p>
+    <div
+      class="display-block bg-color-lightgray contenedor-ejemplo-1"
+    >
+      Este es un contendor div con display block.
+      <div class="bg-color-lightcoral">
+        Este es el contendor hijo o contenido
+        dentro de otro con display block.
+      </div>
+    </div>
+    <div
+      class="display-block bg-color-lightgray contenedor-ejemplo-1"
+    >
+      Este TAMBIÉN es un contendor div con display
+      block.
+    </div>
+    <h3>Que display tiene el h3?</h3>
+    <h3>Que display tiene el h3?</h3>
+    <h3>Que display tiene el h3?</h3>
+
+    <span>Que display tiene el span?</span>
+    <span>Que display tiene el span?</span>
+    <span>Que display tiene el span?</span>
+
+    <div
+      class="display-inline bg-color-lightcoral"
+    >
+      Este es un contendor con display inline
+    </div>
+    <div
+      class="display-inline-block bg-color-lightblue contenedor-ejemplo-1"
+    >
+      Este es un contendor con display
+      inline-block.
+    </div>
+    <div
+      class="display-inline-block bg-color-lightblue contenedor-ejemplo-1"
+    >
+      Este TAMBIÉN es un contendor con display
+      inline-block.
+    </div>
+    <h3>
+      Como modificar una lista con display inline
+    </h3>
+    <div class="contenedor-ejemplo-1">
+      <ul>
+        <li class="display-inline">Link</li>
+        <li class="display-inline">Link</li>
+        <li class="display-inline">Link</li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <br /><br />
+
+    <h2>2. display: flex</h2>
+    <p>
+      El display flex hereda caracteristicas
+      flexibles a los contenedores hijos o que
+      estan contenidos dentro del que tiene el
+      display flex. Comparten el ancho de la
+      pantalla.
+    </p>
+    <div
+      class="display-flex contenedor-ejemplo-1 bg-color-lightcoral"
+    >
+      Este es un contendor con display Flex.
+    </div>
+    <div
+      class="display-flex contenedor-ejemplo-1 bg-color-lightgray"
+    >
+      <div class="caja bg-color-lightblue">
+        Caja1
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja2
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja3
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja4
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja5
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja6
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja7
+      </div>
+    </div>
+    <h3>flex-direction: column, row</h3>
+    <div
+      class="display-flex flex-direction-column contenedor-ejemplo-1 bg-color-lightgray"
+    >
+      <div class="caja bg-color-lightblue">
+        Caja1
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja2
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja3
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja4
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja5
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja6
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja7
+      </div>
+    </div>
+    <h3>flex-wrap: wrap, nowrap</h3>
+    <div
+      class="display-flex wrap contenedor-ejemplo-1 bg-color-lightgray"
+    >
+      <div class="caja bg-color-lightblue">
+        Caja1
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja2
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja3
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja4
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja5
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja6
+      </div>
+      <div class="caja bg-color-lightblue">
+        Caja7
+      </div>
+    </div>
+    <h3>
+      justify-content, align-items, align-content
+    </h3>
+    <div class="ejemplo-justify-align">
+      <img
+        src="https://images.unsplash.com/photo-1560634599-5ee91a6db323?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80"
+      /><img
+        src="https://images.unsplash.com/photo-1560634599-5ee91a6db323?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80"
+      /><img
+        src="https://images.unsplash.com/photo-1560634599-5ee91a6db323?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80"
+      /><img
+        src="https://images.unsplash.com/photo-1560634599-5ee91a6db323?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80"
+      />
+    </div>
+    <h3>
+      Ejemplo: Centrar un contenedor hijo dentro
+      de un padre.
+    </h3>
+    <div class="ejemplo-justify-align">
+      <div>
+        <h2>Quiero estar centrado!</h2>
+        <h2>Quiero estar centrado!</h2>
+        <h2>Quiero estar centrado!</h2>
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+  </body>
+</html>
